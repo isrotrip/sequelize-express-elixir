@@ -7,8 +7,9 @@
 7. jalankan migration untuk memasukkan ke database
 8. create seeder
 9. jalankan seeder untuk memasukkan ke database
+10. pastikan attribute di model sudah tepat sesuai dengan database (migration terbaru)
 
-10. create express + routing dan controller secara lengkap
+11. create express + routing dan controller secara lengkap
 
 Static Method Yang Umum Dipakai:
 ================================
