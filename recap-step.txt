@@ -1,0 +1,26 @@
+1. npm init -y
+2. npm install sequelize pg
+3. add .gitignore
+4. run sequelize init
+5. setup config dan create database
+6. create model + migration table
+7. jalankan migration untuk memasukkan ke database
+8. create seeder
+9. jalankan seeder untuk memasukkan ke database
+
+10. create express + routing dan controller secara lengkap
+
+Static Method Yang Umum Dipakai:
+================================
+gunakan static method findAll untuk mencari seluruh data berdasarkan options
+gunakan static method findOne untuk mencari satu data berdasarkan options
+gunakan static method findByPk untuk mencari data berdasarkan primary key
+
+gunakan static method create untuk create
+gunakan static method update untuk update
+gunakan static method destroy untuk delete
+
+Silahkan baca cara pemakaian di dokumentasi:
+https://sequelize.org/v5/class/lib/model.js~Model.html
+
+Selamat datang di minggu baca dokumentasi~~

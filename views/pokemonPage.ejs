@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Pokemons</title>
+</head>
+<body>
+  <a href="/pokemons/add">Add Pokemon</a>
+  <table border>
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>type</th>
+      <th>hp</th>
+      <th>catched</th>
+    </tr>
+    <% for (let i = 0; i < pokemons.length; i++) { %>
+      <tr>
+        <td><%= pokemons[i].id %></td>
+        <td><%= pokemons[i].name %></td>
+        <td><%= pokemons[i].type %></td>
+        <td><%= pokemons[i].hp %></td>
+        <td><%= pokemons[i].catched %></td>
+      </tr>
+    <% } %>
+  </table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Pokemon Form</title>
+</head>
+<body>
+  <h1>Edit Pokemon</h1>
+  <form action="/pokemons/edit" method="POST">
+    <input type="text" name="name" placeholder="name" value="<%= pokemon.name %>"><br>
+    <select name="type">
+      <option>-- Select Type --</option>
+      <option value="fire">Fire</option>
+      <option value="water">Water</option>
+      <% if(pokemon .type === 'grass') { %>
+        <option value="grass" selected>Grass</option>
+      <% } else { %>
+        <option value="grass">Grass</option>
+      <% } %>
+      <option value="normal">Normal</option>
+    </select><br>
+    <input type="number" name="hp" placeholder="hp" value="<%= pokemon.hp %>"><br>
+    Catched:<br>
+    <input type="radio" name="catched" placeholder="catched" value="true" checked>yes
+    <input type="radio" name="catched" placeholder="catched" value="false">no<br>
+    <input type="date" value="2010-3-08"><br>
+    <%= now.getFullYear() %> <br>
+    <%= now.getMonth() %> <br>
+    <%= now.getDate() %> <br>
+    <input type="submit" value="Add Pokemon">
+  </form>
+</body>
+</html>

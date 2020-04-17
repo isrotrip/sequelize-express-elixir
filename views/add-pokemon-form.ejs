@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Pokemon Form</title>
+</head>
+<body>
+  <h1>Add Pokemon</h1>
+  <form action="/pokemons/add" method="POST">
+    <input type="text" name="name" placeholder="name" value=""><br>
+    <select name="type">
+      <option>-- Select Type --</option>
+      <option value="fire">Fire</option>
+      <option value="water">Water</option>
+      <option value="grass">Grass</option>
+      <option value="normal">Normal</option>
+    </select><br>
+    <input type="number" name="hp" placeholder="hp" value=""><br>
+    Catched:<br>
+    <input type="radio" name="catched" placeholder="catched" value="true">yes
+    <input type="radio" name="catched" placeholder="catched" value="false">no<br>
+    <input type="submit" value="Add Pokemon">
+  </form>
+</body>
+</html>
